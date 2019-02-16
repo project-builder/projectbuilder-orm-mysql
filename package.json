@@ -1,0 +1,26 @@
+{
+  "name": "@projectbuilder/projectbuilder-orm-mysql",
+  "version": "1.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/project-builder/projectbuilder-orm-mysql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/project-builder/projectbuilder-orm-mysql/issues"
+  },
+  "homepage": "https://github.com/project-builder/projectbuilder-orm-mysql#readme",
+  "dependencies": {
+    "mysql2": "^1.6.4"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18"
+  }
+}
