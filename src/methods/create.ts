@@ -17,7 +17,7 @@ for (let key in columns.data) {
 		rowDescpript.required = 'NOT NULL'
 	}
 
-	if(columns.data[key].type === 'string'){
+	if(columns.data[key].dataType === 'string'){
 		rowDescpript.type = 'VARCHAR(255)'
 	}
 
