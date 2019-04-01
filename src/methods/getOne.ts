@@ -9,6 +9,8 @@ const getOne = async function(tableName, id){
     let [rows, columns] = await connection.execute(queryString, queryValues);
 
     let [resultRow] = rows;
+    connection.end()
+
 
     return resultRow
 }

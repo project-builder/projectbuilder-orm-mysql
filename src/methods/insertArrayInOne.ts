@@ -26,6 +26,8 @@ const insertArrayInOne = async function(tableName, id, data){
   let connection = await this.mysql.createConnection(this.config);
 
   let [rows, fields] = await connection.execute(queryString);
+    connection.end()
+
 
   return rows
 

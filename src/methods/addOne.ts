@@ -6,24 +6,20 @@ const addOne = async function(tableName, data){
     for (const key in data) {
         cols.push(key)
         if (typeof(data[key])==='string') {
-            vals.push(`'${data[key]}'`)
+            vals.push(`${data[key]}`)
         }
         else{
             vals.push(`${data[key]}`)
         }
     }
 
-
     let queryString = `INSERT INTO ${tableName} (${cols}) VALUES (${vals})`
-    // let queryString = `INSERT INTO ${tableName} (${cols}) VALUES ()?)`;
-    // let queryParams = vals;
-
 
     console.log(queryString);
 
-    // console.log(queryParams);
-
     let [result] = await connection.execute(queryString, vals);
+      connection.end()
+
 
     return result.insertId
 

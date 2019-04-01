@@ -17,6 +17,8 @@ const getAll = async function(tableName, cols, vals){
     let connection = await this.mysql.createConnection(this.config);
 
     let [rows, fields] = await connection.execute(queryString);
+    connection.end()
+
 
     return rows;
 }

@@ -8,6 +8,8 @@ const deleteOne = async function(tableName, id){
     console.log(queryString);
 
     let result = await connection.execute(queryString);
+    connection.end()
+
 
     return result
 }

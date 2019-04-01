@@ -32,6 +32,8 @@ const updateOne = async function(tableName, id, data){
     // console.log('queryString', queryString);
 
     let [rows, fields] = await connection.execute(queryString);
+
+    connection.end()
     //
     // console.log('RRR', rows);
     // console.log('FFF', fields);

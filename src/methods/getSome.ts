@@ -36,6 +36,7 @@ const getSome = async function(tableName, column, cols, vals ){
   console.log('rows', rows)
 
     // let [rows, fields] = await connection.execute(queryString, queryValues)
+    connection.end()
 
     return rows;
 }
