@@ -62,9 +62,8 @@ let queryString =
 	if(result){
 		console.log(`Succesfully created table ${tableName}`);
 	}
-	    connection.end()
 
-
+  connection.end()
 }
 
 
